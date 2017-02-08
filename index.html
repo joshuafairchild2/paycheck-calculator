@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Paycheck Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Paycheck Calculator</h1>
+      <h4>Instructions:</h4>
+      <p>Enter your hourly rate as well as the number of hours being billed into the specified fields and the calculator will determine your gross pay.</p>
+      <div class="row" id="calculator">
+        <form>       <!--CALCULATOR BEGINS HERE-->
+          <div class="col-xs-3 form-group">
+            <label for="hourly-rate">Your hourly rate:</label>
+            <input type="number" id="hourly-rate" class="form-control">
+          </div>
+          <div class="col-xs-3" id="billed-hrs">
+            <div class="form-group">
+              <label for="normal-hours">Your standard hours:</label>
+              <input type="number" id="normal-hours" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="ot-hours">Your overtime hours:</label>
+              <input type="number" id="ot-hours" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="dt-hours">Your doubletime hours:</label>
+              <input type="number" id="dt-hours" class="form-control">
+            </div>
+          </div>
+
+          <!--Tax calc below this line----------------->
+          <div class="col-xs-6" id="tax-calc">
+
+          </div>
+
+          <button class="btn btn-block btn-info" id="calculate">Calculate</button>
+        </form>  <!--END CALCULATOR-->
+      </div>
+      <div id="gross-pay">
+        <p>Gross Pay: <span class="calculated-gross">$PLACEHOLDER</span></p>
+      </div>
+    </div>
+  </body>
+</html>

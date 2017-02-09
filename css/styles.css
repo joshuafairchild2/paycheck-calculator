@@ -1,12 +1,54 @@
+body {
+  background-color: skyblue;
+}
+
 #calculator {
-  border: solid 1px black;
+  border: solid 3px black;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
 }
 
-#hourly-rate {
+#ui {
+  width: 50%;
+  margin: auto;
 }
 
-#billed-hrs {
+#info {
+  width: 50%;
+  margin: auto;
 }
 
-#tax-calc {
+#info h1 {
+  font-size: 40pt;
+  font-family: fjalla one, helvetica;
+  text-decoration: underline;
+}
+
+#info h4 {
+  font-size: 20pt;
+}
+
+#info p {
+  font-size: 14pt;
+}
+
+#gross-pay {
+  font-weight: bold;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.container {
+  padding-bottom: 250px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin: auto;
+  background-color: #0099ff;
+}
+
+.calculated-gross {
+  font-weight: bold;
+  color: green;
 }

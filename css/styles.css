@@ -40,14 +40,6 @@ body {
   text-decoration: underline;
 }
 
-#error {
-  width: 100%;
-  color: red;
-  display: none;
-  text-align: center;
-  margin-top: 10px;
-}
-
 .container {
   padding-bottom: 250px;
   margin-left: 100px;
